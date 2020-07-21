@@ -5,8 +5,13 @@
 }
 /* d0c4df */
 body{
-    background: linear-gradient(120deg, rgb(188, 86, 192) 31%, rgba(132, 5, 136, 0.6) 68%);
-    color: white;
+    /* background: linear-gradient(120deg, rgb(188, 86, 192) 31%, rgba(132, 5, 136, 0.6) 68%);
+    background: rgb(166,96,168);
+    background: linear-gradient(90deg, rgba(166,96,168,1) 31%, rgba(248,0,255,1) 68%);
+     */
+     background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(214,134,169,1) 0%, rgba(148,187,233,1) 100%);
+     color: rgb(255, 255, 255);
     font-family: "Poppins" , sans-serif;
     min-height: 100vh;
 }
@@ -23,7 +28,7 @@ body{
  }
 
  form input,form button{
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
     border: none;
     background-color: white;
