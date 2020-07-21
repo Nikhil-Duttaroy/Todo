@@ -23,7 +23,7 @@ body{
  }
 
  form input,form button{
-    padding: .5rem;
+    padding: 1rem;
     font-size: 1rem;
     border: none;
     background-color: white;
@@ -50,13 +50,14 @@ body{
  }
 
  .todo{
-     margin:0.45rem;
+     margin:0.5rem;
      background: white;
      color: black;
      font-size: 1.5rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
+     transition: all 0.5s  ease;
  }
 
  .todo li{
@@ -74,3 +75,74 @@ body{
  .completed-btn{
      background-color: rgb(30, 192, 30);
  }
+ .todo-item{
+     padding: 0rem 0.5rem;
+ }
+
+.fa-trash,.fa-check{
+pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    border:none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color:#c918b1;
+    width: 10rem;
+    padding:0.5rem;
+    cursor:pointer;
+} 
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    background: #c918b1;
+    top:0;
+    right: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background-color: white;
+    color:#c918b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
