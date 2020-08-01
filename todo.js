@@ -6,6 +6,8 @@ const todoButton=document.querySelector(".todo-Button")
 const todoList=document.querySelector(".todo-list")
 const filterOption=document.querySelector(".filter-todo")
 const todos=todoList.childNodes;
+// const completedtodos=todos.childNodes;
+// console.log(completedtodos);
 
 //EVENT LISTENERS
 document.addEventListener('DOMContentLoaded',getTodos)
@@ -148,12 +150,11 @@ function removeLocalTodos(todo){
     todos=JSON.parse(localStorage.getItem('todos'));
   }
 
-  const todoIndex = todo.children[0].innerText
-  todos.splice(todos.indexOf(todoIndex),1);
+   const todoIndex = todo.children[0].innerText
+   todos.splice(todos.indexOf(todoIndex),1);
   localStorage.setItem('todos',JSON.stringify(todos));
 
 }
-
 
 
 
