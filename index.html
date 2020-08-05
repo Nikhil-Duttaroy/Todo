@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
--
+
     <title>Todo</title>
 </head>
 <body>
-
 <header>
-    <h1>Todo List</h1>
+    <h1>Todo List</h1>  
 </header>
+<button class="mode">Dark</button>
     <form>
         <input type="text" class="todo-input">
         <button class="todo-Button" type="submit" >
@@ -23,7 +23,7 @@
         <select name="todos" class="filter-todo">
             <option value="all">All</option>
             <option value="completed">Completed</option>
-            <option value="uncompleted">Uncompleted</option>
+            <option value="incompleted">Incompleted</option>
         </select>
     </div>
     </form>

@@ -1,3 +1,16 @@
+
+html[data-theme='light']{
+    --main-bg-color:radial-gradient(circle, rgba(214,134,169,1) 0%, rgba(148,187,233,1) 100%);
+    --txt:rgb(255,255,255);
+    --sec-color: #a660a8c2;
+    --tr-color:#c918b1;
+}
+
+html[data-theme='dark']{
+    --main-bg-color:#17223b;
+    --txt:#ff6768
+}
+
 *{
     margin:0;
     padding:0;
@@ -10,8 +23,8 @@ body{
     background: linear-gradient(90deg, rgba(166,96,168,1) 31%, rgba(248,0,255,1) 68%);
      */
      background: rgb(238,174,202);
-     background: radial-gradient(circle, rgba(214,134,169,1) 0%, rgba(148,187,233,1) 100%);
-     color: rgb(255, 255, 255);
+     background: var(--main-bg-color);
+     color: var(--txt);
     font-family: "Poppins" , sans-serif;
     min-height: 100vh;
 }
@@ -26,6 +39,21 @@ body{
      align-items: center;
      min-height: 20vh;
  }
+ .mode{
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    text-align:center ;
+ }
 
  form input,form button{
     padding: 0.5rem;
@@ -34,14 +62,14 @@ body{
     background-color: white;
  }
  form button{
-     color:#a660a8c2;
+     color:var(--sec-color);
      cursor: pointer;
      transition: all 0.3s ease;
  }
 
  form button:hover{
     color: white;
-    background-color: #a660a8c2;
+    background-color:var(--sec-color);
  }
 
  .todo-container{
@@ -71,7 +99,7 @@ body{
 
  .trash-btn,
  .completed-btn{
-     background:  #c918b1;
+     background:  var(--tr-color);
      border: none;
      padding: 0.5rem;
      font-size: 1rem;
@@ -112,7 +140,7 @@ select{
 }
 
 select{
-    color:#c918b1;
+    color:var(--tr-color);
     width: 10rem;
     padding:0.5rem;
     cursor:pointer;
@@ -120,7 +148,7 @@ select{
 .select::after{
     content:"\25BC";
     position: absolute;
-    background: #c918b1;
+    background: var(--tr-color);
     top:0;
     right: 0;
     padding: 0.5rem;
@@ -130,7 +158,7 @@ select{
 
 .select:hover::after{
     background-color: white;
-    color:#c918b1;
+    color:var(--tr-color);
 }
 
 

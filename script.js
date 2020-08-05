@@ -15,3 +15,22 @@ gsap.from("header",{
     opacity : 0,
     duration :2
 })
+
+
+
+const mode = document.querySelector('.mode');
+let light = false;
+mode.addEventListener('click',() => {
+    if(light){
+        light = false;
+        document.documentElement.setAttribute('data-theme','light');
+        mode.textContent = 'Dark';
+        
+    }
+    else{
+        light = true;
+        document.documentElement.setAttribute('data-theme','dark');
+        mode.textContent = 'Light';
+    }
+})
+    
