@@ -9,6 +9,8 @@ html[data-theme='light']{
 html[data-theme='dark']{
     --main-bg-color:#17223b;
     --txt:#ff6768
+    --sec-color:#1f4068;
+    --tr-color:#1b3269;
 }
 
 *{
@@ -85,7 +87,7 @@ body{
  .todo{
      margin:0.5rem;
      background: white;
-     color: black;
+     color:black;
      font-size: 1.5rem;
      display: flex;
      justify-content: space-between;
