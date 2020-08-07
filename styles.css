@@ -7,8 +7,8 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark']{
-    --main-bg-color:#17223b;
-    --txt:#ff6768
+    --main-bg-color:radial-gradient(circle, rgba(23,48,106,1) 3%, rgba(23,34,59,1) 62%);
+    --txt: #ff6768;
     --sec-color:#1f4068;
     --tr-color:#1b3269;
 }
